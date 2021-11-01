@@ -1,0 +1,147 @@
+:root {
+  /* 
+    --------------- Primary */
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* 
+    --------------- Neutral */
+  --Transparent-white: hsla(0, 0%, 100%, 0.75); /* Paragraphs */
+  --Very-light-gray: hsl(0, 0%, 95%); /* background, headings, buttons */
+
+  /* 
+  --------------- FONT */
+  --Big-Shoulders: "Big Shoulders Display", cursive;
+
+  --Lexend: "Lexend Deca", sans-serif;
+}
+
+/* 
+--------------- Reset CSS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 
+--------------- Main CSS */
+html {
+  font-size: 15px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--Very-light-gray);
+  font-family: var(--Lexend);
+}
+
+.main {
+  margin: 20vh 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 3.5rem 2.5rem;
+}
+.icon {
+  width: 3.5rem;
+  height: auto;
+}
+.title {
+  color: var(--Very-light-gray);
+  font-family: var(--Big-Shoulders);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin: 2.1rem 0;
+}
+.desc {
+  color: var(--Transparent-white);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  padding-right: 1.3rem;
+}
+.sedan {
+  background: var(--Bright-orange);
+}
+.suv {
+  background: var(--Dark-cyan);
+}
+.luxury {
+  background: var(--Very-dark-cyan);
+}
+.button {
+  margin-top: 5rem;
+  padding: 0.8rem 0.5rem;
+  border-radius: 30px;
+  width: 10rem;
+  border: 2px solid white;
+  outline: none;
+}
+.button-sedan {
+  color: var(--Bright-orange);
+}
+.button-suv {
+  color: var(--Dark-cyan);
+}
+.button-luxury {
+  color: var(--Very-dark-cyan);
+}
+/* 
+------------- Active State */
+.button:hover {
+  color: white;
+}
+.button-sedan:hover {
+  background: var(--Bright-orange);
+}
+.button-suv:hover {
+  background: var(--Dark-cyan);
+}
+.button-luxury:hover {
+  background: var(--Very-dark-cyan);
+}
+
+/* 
+--------------- Responsive Goes Here  */
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 10px;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .button {
+      margin-top: 2.5rem;
+  }
+}
