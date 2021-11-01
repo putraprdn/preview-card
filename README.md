@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](https://raw.githubusercontent.com/putraprdn/preview-card/master/images/screenshot%20Preview%20Card%20Decrypt.png)
+![](https://raw.githubusercontent.com/putraprdn/preview-card/master/images/screenshot.png)
 
 ### Links
 
